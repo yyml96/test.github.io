@@ -1,1 +1,272 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>19.2.2023</title>
+    <link rel="icon" href="/Images/LAB logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/19.2.2023.css" />
+  </head>
+  <body>
+    <img
+      class="LAB logo"
+      src="/Images/Screen Shot 2023-01-24 at 16.06.03.png"
+      alt="LAB University of Applied Sciences logo"
+    />
+    <h1>TASKS FOR REHEARSING</h1>
+    <ol>
+      <h3>
+        <li>What are the obligatory elements in each (X)HTML document?</li>
+      </h3>
+      <p>Each XHTML document must have the following elements:</p>
+      <ul>
+        <li>
+          A doctype declaration indicating that the document is written in
+          XHTML.
+        </li>
+        <li>
+          The html element, which serves as the root element of the document.
+        </li>
+        <li>The head element, which contains metadata about the document.</li>
+        <li>
+          The title element, which provides a title for the document that is
+          displayed in the browser's title bar or tab.
+        </li>
+        <li>
+          The body element, which contains the content of the document that is
+          displayed in the browser window. It is also good practice to include
+          the xmlns attribute on the html element,to specify the XML namespace
+          for the document.
+        </li>
+      </ul>
+      <h3><li>What's DOCTYPE declaration meant for?</li></h3>
+      <p>
+        The DOCTYPE declaration is an instruction to the web browser about what
+        version of HTML or XHTML the document is written in. It is used to
+        ensure that the browser renders the content correctly, by specifying the
+        Document Type Definition (DTD) that the document conforms to. The DTD
+        defines the rules for the markup language, such as what elements and
+        attributes are available, and how they can be used. The browser uses the
+        DTD to validate the document and ensure that it is well-formed and
+        follows the correct syntax.
+      </p>
+      <h3>
+        <li>
+          What is an URL? Give examples both of use of absolute and relative
+          URLs.
+        </li>
+      </h3>
+      <p>
+        A URL, or uniform resource locator, is a string of text that identifies
+        the location of a resource on the internet, such as a webpage, image, or
+        file. A URL typically includes the protocol (such as http or https), the
+        domain name, and the path to the resource.
+      </p>
+      <h4>An Absolute URL</h4>
+      <p>
+        An absolute URL includes the full address of the resource, including the
+        protocol and domain name. For example:
+        <a href="https://www.lab.fi/en/info">https://www.lab.fi/en/info</a> This
+        URL specifies that the resource can be accessed using the HTTPS protocol
+        and the domain name <a href="http://www.lab.fi">www.lab.fi</a>, and that
+        the resource is located in the
+        <a href="https://www.lab.fi/en/info">"en/info"</a> directory.
+      </p>
+      <h4>A Relative URL</h4>
+      <p>
+        A relative URL, on the other hand, does not include the protocol and
+        domain name and instead, it's based on the location of the current page.
+        For example: <a href="https://www.lab.fi/en/info">"en/info"</a> This URL
+        specifies that the resource is located in the
+        <a href="https://www.lab.fi/en/info">"en/info"</a> directory, relative
+        to the current page. The browser will use the protocol and domain name
+        of the current page to complete the URL.Relative URLs can be useful when
+        linking to resources within the same website, as the links will still
+        work even if the domain name changes. Absolute URLs are useful when
+        linking to external resources, as the links will not break if the domain
+        name changes.
+      </p>
+      <h3>
+        <li>
+          How is it possible to define the text visible on the top of a browsers
+          window and/or on a tab? How about adding an icon next to the title?
+          Give examples.
+        </li>
+      </h3>
+      <p>
+        The text that is visible on the top of a browser window and/or on a tab
+        is called the title of the webpage, and it can be defined using the
+        &lt;title&gt; element within the &lt;head&gt; section of an HTML
+        document.
+      </p>
+      <p>Here is an example of how to set the title of a webpage:</p>
+      <img src="/Images/Question4 answer.png" />
+      <p>
+        In this example, the title of the webpage is set to "19.2.2023" and it
+        will be visible on the top of the browser window and on the tab. To add
+        an icon next to the title, you can use a &lt;link&gt; element with a
+        "shortcut icon" or "icon" rel attribute, and point it to the location of
+        the icon file. The icon file should be in .ico, .png, or .svg format.
+      </p>
+      <p>
+        For example: &lt;link rel="icon" href="/Images/LAB logo.png"
+        type="image/png" /&gt;
+      </p>
+
+      <h3>
+        <li>
+          How do blocklevel and inline level elements differ from each other?
+          Give examples.
+        </li>
+      </h3>
+      <p>
+        In HTML, elements are either block-level or inline-level elements. The
+        main difference between the two is how they are displayed on a web page
+        and how they affect the layout of the surrounding content.
+      </p>
+      <h4>Block-level elements</h4>
+      <ul>
+        <li>
+          Take up the full width of their parent container, and create a new
+          line after them.
+        </li>
+        <li>
+          Common block-level elements include &lt;div&gt;&lt;/div&gt;,
+          &lt;p&gt;, &lt;h1&gt;, &lt;ul&gt;, &lt;li&gt;, &lt;form&gt; and
+          &lt;header&gt;&lt;/header&gt;
+        </li>
+        <li>Examples:</li>
+        <pre>
+            <code>
+            &lt;div&gt;
+            &lt;p&gt;This is a block-level element&lt;/p&gt;
+            &lt;p&gt;It takes up the full width of its parent container&lt;/p&gt;
+            &lt;p&gt;And creates a new line after it&lt;/p&gt;
+            &lt;/div&gt;
+            <div>
+                <p>This is a block-level element</p>
+                <p>It takes up the full width of its parent container</p>
+                <p>And creates a new line after it</p>
+              </div>
+            </code>
+        </pre>
+      </ul>
+      <h4>Inline-level elements:</h4>
+      <ul>
+        <li>
+          Only take up as much width as necessary, and do not create a new line
+          after them.
+        </li>
+        <li>
+          Common inline-level elements include &lt;span&gt;, &lt;a&gt;,
+          &lt;strong&gt;, &lt;em&gt;, &lt;img&gt; and &lt;input&gt;
+        </li>
+        <li>Examples:</li>
+        <pre>
+            <code>
+                &lt;p&gt;This is an 
+                &lt;span&gt;inline-level element&lt;/span&gt; 
+                within a &lt;span&gt;block-level element&lt;/span&gt;.&lt;/p&gt;
+
+                <p>This is an <span>inline-level element</span> within a <span>block-level element</span>  .</p>
+            </code>
+        </pre>
+      </ul>
+      <h3>
+        <li>
+          Find out a piece of Java code and make it appear on your web page the
+          same way it appears in a text editor.
+        </li>
+      </h3>
+      <p>Here is some example of Java code:</p>
+      <pre><code>public class Circle {
+        public static void main(String[] args) {
+          double radius = 5.0;
+          double area = Math.PI * radius * radius;
+          System.out.println("The area of a circle with radius " + radius + " is " + area);
+        }
+      }
+      </code></pre>
+      <h3>
+        <li>
+          There are three different ways of adding CSS styles on an (X)HTML
+          page. How? What are the benefits of each way?
+        </li>
+      </h3>
+      <ol>
+        <li>
+          <h4>Inline styles</h4>
+        </li>
+        <p>
+          Inline styles are added directly to the HTML elements using the style
+          attribute. They are useful when you need to apply a specific style to
+          a single element and you don't want to create a separate CSS class for
+          it.
+        </p>
+        <p>For example:</p>
+        <p>
+          &lt;p style=&quot;color: blue;&quot;&gt;This is a blue
+          paragraph.&lt;/p&gt;
+        </p>
+        <li>
+          <h4>Internal stylesheet</h4>
+        </li>
+        <p>
+          An internal stylesheet is added to the &lt;head&gt; section of the
+          HTML document using the &lt;style&gt; element. It is useful when you
+          want to apply styles to multiple elements on the same HTML page and
+          you don't need to reuse the styles on other pages.
+        </p>
+        <p>For Example:</p>
+        <p>
+          &lt;head&gt; &lt;style&gt; p { color: blue; } &lt;/style&gt;
+          &lt;/head&gt;
+        </p>
+        <li>
+          <h4>External stylesheet</h4>
+        </li>
+        <p>
+          An external stylesheet is a separate CSS file that is linked to the
+          HTML document using the &lt;link&gt; element in the &lt;head&gt;
+          section of the HTML document. External stylesheets are useful when you
+          want to apply styles to multiple pages or when you want to separate
+          the presentation from the structure of the HTML document.
+        </p>
+        <p>For Example:</p>
+        <p>
+          &lt;head&gt; &lt;link rel=&quot;stylesheet&quot;
+          href=&quot;styles.css&quot;&gt; &lt;/head
+        </p>
+      </ol>
+      <h3>
+        <li>
+          How to create a nested list looking more or less as follows: • Banana
+          • Apple a) Pinja b) Samo • Orange How to change the list items using
+          CSS? Make an example of a nested list with images as list items.
+        </li>
+      </h3>
+      <h3>
+        <li>
+          What are selectors in CSS? Give at least five examples of different
+          kind of selectors (basic type selectors, class, id, and attribute
+          selectors). Show them in use on your (X)HTML page.
+        </li>
+      </h3>
+      <h3>
+        <li>
+          Create at least the following kinds of two links on your web page: a.
+          a text link, which shall appear first with font Lucida of size 12px
+          and color #555; The link text shall not be underlined. When the user
+          brings the mouse over the link text it shall change color, be bolded
+          and be a bit larger. After the user has visited the link the looks of
+          the link text shall be otherwise the same as in the start, but the
+          color shall be different. b. an image link without borders around the
+          image. The resource which the link shall open shall be opened in a new
+          window
+        </li>
+      </h3>
+    </ol>
+  </body>
+</html>
